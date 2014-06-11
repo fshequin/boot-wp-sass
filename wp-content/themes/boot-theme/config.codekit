@@ -984,8 +984,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "boot-theme",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "boot-theme-sass",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "globe_blue"
 	},
 "projectSettings": {
