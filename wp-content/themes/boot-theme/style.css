@@ -1,5 +1,5 @@
 /*
-Theme Name: enter theme name here
+Theme Name: boot-wp-sass
 Theme URI: http://btcny.com
 Author: Fred Shequine
 Author URI: http://btcny.com
@@ -13,15 +13,12 @@ Text Domain: btc
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-/* 
-
-Fonts
-
-
-
-*/
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 /* Colors: */
 body {
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
   color: #333333;
+  font-weight: 600;
 }
