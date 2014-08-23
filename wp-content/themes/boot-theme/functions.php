@@ -18,8 +18,8 @@
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
  * @package WordPress
- * @subpackage grace-store
- * @since grace-store 1.0
+ * @subpackage boot-wp-sass
+ * @since  boot-wp-sass 1.0
  */
 
 // link in the lib files
@@ -91,7 +91,7 @@ function boot_setup() {
 	//require_once('custom_comment_walker.php');
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menu( 'main_menu', __( 'main_menu', 'boot-wp' ) );
+	register_nav_menu( 'main_menu', __( 'main_menu', 'boot' ) );
 
 	/*
 	 * This theme uses a custom image size for featured images, displayed on

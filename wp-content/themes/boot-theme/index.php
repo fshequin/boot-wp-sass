@@ -2,7 +2,7 @@
 <html>
 <?php wp_head(); ?>
   <head>
-    <title>Site Title</title>
+    <title><?php wp_title(); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
@@ -17,32 +17,31 @@
     <![endif]-->
   </head>
   <body>
-    
-<div class="container">
-      <div class="row">
-        <div class="col-md-12 header">
-          Header
-        </div>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 header">
+        Header
       </div>
     </div>
+  </div>
 
-<div class="container">
-      <div class="row">
-        <div class="col-md-12 main-content">
-          Main Content
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 main-content">
+        Main Content
       </div>
     </div>
+  </div>
 
-<div class="container">
-      <div class="row">
-        <div class="col-md-12 footer">
-          Footer
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 footer">
+        Footer
       </div>
     </div>
-    
-
+  </div>
     
 
 <?php wp_footer(); ?>
