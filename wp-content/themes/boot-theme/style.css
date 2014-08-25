@@ -20,7 +20,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   color: white;
-  font-weight: 400;
+  font-weight: 300;
   padding-top: 50px;
   background-color: #333333;
 }
@@ -32,9 +32,49 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
+p {
+  color: #cccccc;
+}
+
 .post-content {
   margin-top: 40px;
 }
 .post-content h1 {
+  font-weight: 600;
   margin-bottom: 20px;
+  color: #cc7732;
+}
+.post-content h2, .post-content h3, .post-content h4 {
+  color: #6d9cb5;
+}
+.post-content p {
+  color: #a5c261;
+}
+.post-content strong {
+  font-weight: 600;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 3em;
+  padding: 0;
+  counter-reset: li-counter;
+}
+
+ol > li {
+  position: relative;
+  padding-left: 0.5em;
+}
+
+ol > li:before {
+  position: absolute;
+  top: 3px;
+  left: -1em;
+  width: 0.8em;
+  line-height: 1;
+  text-align: right;
+  color: #e8bf6a;
+  content: counter(li-counter);
+  counter-increment: li-counter;
 }

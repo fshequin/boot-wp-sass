@@ -34,14 +34,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Colors: */
 
 $black: #333333;
+$brown: #cc7732;
 $white: #ffffff;
+$yellow: #e8bf6a;
+$green: #a5c261;
+$blue: #6d9cb5;
+$gray: #cccccc;
+
 $base-font: 16px;
 
 body {
 	@include source_sans;
 	font-size: $base-font;
 	color: $white;
-	font-weight: 400;
+	font-weight: 300;
 	padding-top: 50px;
 	background-color: $black;
 	
@@ -50,10 +56,47 @@ a {
 	outline: 0;
 	@include transition (all 0.2s ease-in-out);
 }
+p {
+	color: $gray;
+}
 .post-content {
 	margin-top: 40px;
 	h1 {
+		font-weight: 600;
 		margin-bottom: 20px;
+		color: $brown;
+	}
+	h2, h3, h4 {
+		color: $blue;
+	}
+	p {
+		color: $green;
+	}
+	strong {
+		font-weight: 600;
 	}
 }
 
+ol {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 3em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+ol > li{
+    position: relative;
+    padding-left: 0.5em;
+}
+ol > li:before {
+    position: absolute;
+    top: 3px;
+    left: -1em;
+    width: 0.8em;
+    line-height: 1;
+    text-align: right;
+    color: $yellow;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
