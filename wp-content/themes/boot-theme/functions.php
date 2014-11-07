@@ -27,7 +27,7 @@
 	//require TEMPLATEPATH.'/libs/post_types.php';
 	//require TEMPLATEPATH.'/libs/taxonomies.php';
 
-	//add_action('init', 'require_grace_metaboxes');
+	//add_action('init', 'require_boot_metaboxes');
 
 	/**
 	 * Initialize the metabox class.
