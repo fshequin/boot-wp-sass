@@ -55,8 +55,9 @@ body {
 }
 a {
 	outline: 0;
-	@include transition (all 0.2s ease-in-out);
+	@include transition(all 0.2s ease-in-out);
 }
+
 p {
 	color: $gray;
 }
@@ -66,9 +67,23 @@ p {
 		font-weight: 600;
 		margin-bottom: 20px;
 		color: $brown;
+		a {
+			color: $brown;
+		}
+		a:hover {
+			color: $blue;
+			text-decoration: none;
+		}
 	}
 	h2, h3, h4 {
 		color: $blue;
+		a {
+			color: $blue;
+		}
+		a:hover {
+			color: $brown;
+			text-decoration: none;
+		}
 	}
 	p {
 		color: $green;
@@ -86,11 +101,11 @@ ol {
      
     counter-reset: li-counter;
 }
-ol > li{
+ol>li {
     position: relative;
     padding-left: 0.5em;
 }
-ol > li:before {
+ol>li:before {
     position: absolute;
     top: 3px;
     left: -1em;
