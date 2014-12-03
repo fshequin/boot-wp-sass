@@ -1,4 +1,4 @@
-Boot-WP
+Boot-WP-SASS
 ====
 
 A basic Wordpress site framework using Bootstrap SASS
